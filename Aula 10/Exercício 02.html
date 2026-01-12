@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 02</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        
+        <script>
+            let nomes = [];
+            let alturas = [];
+            let numeroAtletas = 0;
+            let entrada = true;
+            
+            do {
+                nomes[numeroAtletas] = prompt('Digite o nome do ' + (numeroAtletas+1) + 'º atleta: ');
+                alturas[numeroAtletas] = parseFloat(prompt('Digite a altura do ' + (numeroAtletas+1) + 'º atleta (em metros): '));
+
+                let adicionar = prompt('Deseja adicionar mais um atleta? (S/N)');
+                if (adicionar == 'N') {
+                    entrada = !entrada
+                } else if (adicionar == 'S') {
+                    numeroAtletas++;
+                }
+            } while (entrada)
+
+            let indiceAtletaMaisAlto = 0;
+            let alturaMaisAlta = alturas[0];
+            
+            for (let i = 1; i < nomes.length; i++) {
+                if (alturas[i] > alturaMaisAlta) {
+                    alturaMaisAlta = alturas[i];
+                    indiceAtletaMaisAlto = i;
+                }
+            }
+
+            let atletaMaisAlto = nomes[indiceAtletaMaisAlto];
+
+            alert('O atleta mais alto é: '+ atletaMaisAlto);
+        </script>
+    </body>
+</html>

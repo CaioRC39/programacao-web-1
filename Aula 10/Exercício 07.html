@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 07</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <button onclick="shitzu();">Shitzu</button>
+        <button onclick="yorkshire();">Yorkshire</button>
+        <button onclick="pinscher();">Pinscher</button>
+
+        <script>
+            function shitzu() {
+                const elemento_imgs = document.createElement('img');
+                const imgs = 'shitzu.jpg'
+
+                elemento_imgs.src = imgs;
+
+                document.body.appendChild(elemento_imgs);
+            }
+
+            function yorkshire() {
+                const elemento_imgy = document.createElement('img');
+                const imgy = 'yorkshire.jpg'
+
+                elemento_imgy.src = imgy;
+
+                document.body.appendChild(elemento_imgy);
+            }
+
+            function pinscher() {
+                const elemento_imgp = document.createElement('img');
+                const imgp = 'pinscher.jpg'
+
+                elemento_imgp.src = imgp;
+
+                document.body.appendChild(elemento_imgp);
+            }
+        </script>
+    </body>
+</html>

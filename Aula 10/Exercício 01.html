@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 01</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        
+        <script>
+            let nomes = [];
+            let alturas = [];
+            const numeroAtletas = 5;
+
+            alert("Digite os dados dos atletas:");
+
+            for (let i = 0; i < numeroAtletas; i++) {
+                    nomes[i] = prompt('Digite o nome do ' + (i+1) + 'º atleta: ');
+                    alturas[i] = parseFloat(prompt('Digite a altura do ' + (i+1) + 'º atleta (em metros): '));
+                }
+
+            let indiceAtletaMaisAlto = 0;
+            let alturaMaisAlta = alturas[0];
+            
+            for (let i = 1; i < numeroAtletas; i++) {
+                if (alturas[i] > alturaMaisAlta) {
+                    alturaMaisAlta = alturas[i];
+                    indiceAtletaMaisAlto = i;
+                }
+            }
+
+            let atletaMaisAlto = nomes[indiceAtletaMaisAlto];
+
+            alert('O atleta mais alto é: '+ atletaMaisAlto);
+        </script>
+    </body>
+</html>

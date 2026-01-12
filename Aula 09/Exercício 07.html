@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 07</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <script>
+            const numero1 = parseFloat(prompt('Insira um número'));
+            const numero2 = parseFloat(prompt('Insira um outro número'));
+            if (numero1 == numero2) {
+                alert('O número ' + numero1 + ' é igual ao número ' + numero2);
+            } else {
+                alert('O número ' + numero1 + ' é diferente do número ' + numero2);
+                if (numero1 > numero2) {
+                    alert('O número ' + numero1 + ' é maior do que o número ' + numero2);
+                } else {
+                    alert('O número ' + numero2 + ' é maior do que o número ' + numero1);
+                }
+                if (numero1 < 0) {
+                    alert('O número ' + numero1 + ' é positivo');
+                }
+                if (numero2 < 0) {
+                    alert('O número ' + numero2 + ' é positivo');
+                }
+                if (numero1 % numero2 !== 0) {
+                    alert('Há resto de divisão ao dividir o número ' + numero1 + ' pelo número ' + numero2);
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 09</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p>Insira um valor para calcular a tabuada</p>
+        <input type="text" id="campo1" />
+        <button onclick="receberValores();">Gerar tabuada</button>
+
+        <script>
+            function receberValores() {
+                let campo1 = document.getElementById('campo1');
+
+                let numero = parseInt(campo1.value);
+                let resposta = tabuada(numero);
+
+                let elemento_p = document.getElementById('resultado');
+
+                if (elemento_p) {
+                    elemento_p.textContent = resposta;
+                } else {
+                    elemento_p = document.createElement('p');
+                    elemento_p.id = 'resultado';
+                    let texto_p = document.createTextNode(resposta);
+                    elemento_p.appendChild(texto_p);
+                    document.body.appendChild(elemento_p)
+                }
+            }
+
+            function tabuada(numero) {
+                let resultado = '';
+                for (let i = 1; i <= 10; i++) {
+                    resultado += numero + 'x' + i + '=' + (numero * i) + '\n';
+                }
+                return resultado;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 08</title>
+        <meta charset="UTF-8">
+        <style>
+            img {
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="adicionarImagem();">Adicionar Imagem</button>
+
+        <script>
+            function adicionarImagem() {
+            const elemento_img = document.createElement('img');
+            const img = 'catioro.jpg';
+
+            elemento_img.src = img;
+
+            elemento_img.style.left = Math.random() * (window.innerWidth - 200) + 'px';
+            elemento_img.style.top = Math.random() * (window.innerHeight - 200) + 'px';
+
+            document.body.appendChild(elemento_img);
+        }
+        </script>
+    </body>
+</html>

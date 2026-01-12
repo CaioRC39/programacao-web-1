@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mario</title>
+  <style>
+    /* Remova os indicadores de lista da lista
+    (utilize list-style: none;) */
+    li {
+      list-style: none;
+    }
+
+    /* Faça com que os links da página disponíveis
+    e já visitados fiquem vermelhos */
+    a:link, a:visited {
+      color: red;
+    }
+
+    /* Faça com que os links apontados pelo cursor
+    do mouse ou selecionados pelo teclado fiquem
+    com o fundo vermelho e a cor branca */
+    a:hover, a:active {
+      background-color: red;
+      color: white;
+    }
+
+    /* Aumente o tamanho da fonte do 3º item
+    da lista para 24px */
+    li:nth-child(3) {
+      font-size: 24px;
+    }
+
+    /* Faça com que a lista de personagens tenha
+    apenas os elementos ímpares com fundo cinza */
+    li:nth-child(odd) {
+      background-color: gray;
+    }
+
+  /* Faça com que o 4ª elemento da lista tenha
+    fundo verde ao ser apontado com o mouse */
+    ul li:nth-child(4):hover {
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mario</h1>
+  <header>
+    <ul>
+      <li><a href="./"></a>Início</a></li>
+      <li><a href="http://www.nintendo.com" target="_blank">Página da Nintendo</a></li>
+      <li><a href="https://www.amazon.com.br/Nintendo-SWSwitchTitle5_WiiU-Super-Mario-Odyssey/dp/B01MY7GHKJ?tag=kns00-20&ascsubtag=go_1674393062_67636234529_326860672741_dsa-607544680959_c_" target="_blank">Comprar Super Mario Odyssey</a></li>
+    </ul>
+  </header>
+  <section>
+    <h2>Personagens</h2>
+    <ul>
+      <li>Mario</li>
+      <li>Luigi</li>
+      <li>Princesa Peach</li>
+      <li>Donkey Kong</li>
+      <li>Paulina</li>
+      <li>Toad</li>
+      <li>Wario</li>
+      <li>Waluigi</li>
+      <li>Yoshi</li>
+      <li>Princesa Daisy</li>
+      <li>Rosalina</li>
+      <li>Koopalings</li>
+      <li>Koopa Kids</li>
+      <li>Bowser Jr</li>
+      <li>Magikoopa</li>
+      <li>Goomba</li>
+      <li>Lakitu</li>
+      <li>Shy Guy</li>
+      <li>Thwomps</li>
+      <li>Plantas Piranha</li>
+    </ul>
+  </section>
+</body>
+</html>

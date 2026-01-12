@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 10</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <img id="banner" src="shitzu.jpg">
+
+        <script>
+            const imagens = ['shitzu.jpg', 'yorkshire.jpg'];
+            let indice = 0;
+
+            function alternarImagem() {
+                const bannerImg = document.getElementById('banner');
+
+                bannerImg.src = imagens[indice];
+
+                indice = (indice + 1) % imagens.length;
+            }
+
+            setInterval(alternarImagem, 5000);
+        </script>
+    </body>
+</html>

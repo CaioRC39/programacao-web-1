@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 11</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <script>
+            const ano_nasc = parseInt(prompt('Insira o ano de seu nascimento'));
+            const ano_atual = parseInt(prompt('Insira o ano atual'));
+            const idade = ano_atual - ano_nasc;
+            if (ano_nasc <= 1900 || ano_nasc >= ano_atual || ano_nasc == 0) {
+                alert('Erro: ano de nascimento inválido');
+            } else {
+                alert('Sua idade é: ' + idade);
+            }
+        </script>
+    </body>
+</html>

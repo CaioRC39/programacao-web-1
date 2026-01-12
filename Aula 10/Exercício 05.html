@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 05</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p>Insira um número para saber se ele é par ou ímpar</p>
+        <input type="text" id="campo1" />
+        <button onclick="receberValores();">Comparar</button>
+
+        <script>
+            function parImpar(numero) {
+                if (numero % 2 == 0) {
+                    return 'par';
+                } else {
+                    return 'ímpar';
+                }
+            }
+            
+            function receberValores() {
+                const campo1 = document.getElementById('campo1');
+
+                let valor1 = parseInt(campo1.value);
+                resultado = parImpar(valor1);
+
+                let elemento_p = document.getElementById('resultado');
+
+                if (elemento_p) {
+                    elemento_p.textContent = 'O número é: ' + resultado;
+                } else {
+                    elemento_p = document.createElement('p');
+                    elemento_p.id = 'resultado';
+                    const texto_p = document.createTextNode('O  número é: ' + resultado);
+                    elemento_p.appendChild(texto_p);
+                    document.body.appendChild(elemento_p);
+                }
+            }
+        </script>
+    </body>
+</html>

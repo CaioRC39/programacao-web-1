@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 03</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <script>
+            const palavra = prompt('Digite uma palavra que contenha a letra F ou que comece com a letra P');
+            if (palavra.startsWith('P')) {
+                alert('A palavra ' + palavra + ' começa com a letra P');
+            } else {
+                alert('A palavra ' + palavra + ' não começa com a letra P');
+                if (palavra.includes('f') || palavra.startsWith('F')) {
+                    alert('A palavra ' + palavra + ' contém a letra F');
+                } else {
+                    alert('A palavra ' + palavra + ' não contém a letra F');
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 12</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <script>
+            const nota1 = parseFloat(prompt('Insira a primeira nota'));
+            const nota2 = parseFloat(prompt('Insira a segunda nota'));
+            const nota3 = parseFloat(prompt('Insira a terceira nota'));
+            const media = (nota1 + nota2 + nota3)/3;
+            if (media >= 8 && media <= 10) {
+                alert('Nota A');
+            } else if (media >= 7 && media < 8) {
+                alert('Nota B');
+            } else if (media >= 5 && media < 7) {
+                alert('Nota C');
+            } else if (media >= 4 && media < 5) {
+                alert('Nota D');
+            } else if (media >= 0 && media < 4) {
+                alert('Nota E');
+            }
+        </script>
+    </body>
+</html>

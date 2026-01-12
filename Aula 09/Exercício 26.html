@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 26</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <script>
+            const numero = parseInt(prompt('Insira um número entre um e dez'));
+            if (numero <= 0 || numero >= 11) {
+                alert('Erro: número fora do limite estipulado');
+            } else {
+                let aleatorio = Math.floor(Math.random() * 10) + 1;
+                if (aleatorio == numero) {
+                    alert('Parabéns, você acertou! O número digitado ' + numero + ' e o número aleatório são iguais');
+                } else {
+                    alert('O número digitado foi ' + numero + '. O número aleatório foi ' + aleatorio);
+                }
+            }
+        </script>
+    </body>
+</html>

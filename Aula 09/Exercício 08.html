@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 08</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <script>
+            alert('Insira dois números e a operação aritmética desejada realizada entre eles\nInsira + , - , * ou / para escolher a operação')
+            const numero1 = parseFloat(prompt('Insira um número'));
+            const numero2 = parseFloat(prompt('Insira um outro número'));
+            const op = prompt('Insira a operação');
+            if (op == '+') {
+                let resultado = numero1 + numero2;
+                alert('A operação escolhida foi soma\n' + numero1 + ' + ' + numero2 + ' = ' + resultado);
+            } else if (op == '-') {
+                let resultado = numero1 - numero2;
+                alert('A operação escolhida foi subtração\n' + numero1 + ' - ' + numero2 + ' = ' + resultado);
+            } else if (op == '*') {
+                let resultado = numero1 * numero2;
+                alert('A operação escolhida foi multiplicação\n' + numero1 + ' * ' + numero2 + ' = ' + resultado);
+            } else if (op == '/') {
+                if (numero2 == 0) {
+                    alert('Erro: não é possível dividir por zero');
+                } else {
+                    let resultado = numero1 / numero2;
+                    alert('A operação escolhida foi divisão\n' + numero1 + ' / ' + numero2 + ' = ' + resultado);
+                }
+            } else {
+                alert('Operador inválido');
+            }
+        </script>
+    </body>
+</html>

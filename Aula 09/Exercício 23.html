@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 23</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <script>
+            const numero = parseInt(prompt('Digite um número para saber seus divisores'));
+            var saida = '';
+            for (let i = 1; i <= numero; i++) {
+                if (numero % i == 0) {
+                    saida += i + '   ';
+                }
+            } alert('Os divisores de ' + numero + ' são: ' + saida);
+        </script>
+    </body>
+</html>

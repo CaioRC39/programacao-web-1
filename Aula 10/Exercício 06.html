@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 06</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p>Insira um texto</p>
+        <input type="text" id="campo1" />
+        <button onclick="receberValores();">Imprimir</button>
+
+        <script>
+            function receberValores() {
+                let campo1 = document.getElementById('campo1');
+
+                let texto = campo1.value;
+
+                const elemento_p = document.createElement('p');
+                const texto_p = document.createTextNode(texto);
+
+                elemento_p.appendChild(texto_p);
+                document.body.appendChild(elemento_p)
+            }
+        </script>
+    </body>
+</html>

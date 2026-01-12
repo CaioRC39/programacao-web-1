@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 27</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <script>
+            const aleatorio = Math.floor(Math.random() * 10) + 1;
+            const acertou = false;
+            do {
+                let numero = parseInt(prompt('Insira um número entre um e dez'));
+                if (numero < 1 || numero > 10) {
+                    alert('Erro: Por favor, insira um número válido entre um e dez');
+                } else {
+                    if (aleatorio == numero) {
+                        alert('Parabéns, você acertou! O número digitado ' + numero + ' e o número aleatório são iguais');
+                        acertou = true;
+                    } else if (aleatorio > numero) {
+                        alert('O número digitado ' + numero + ' é menor do que o número aleatório, tente novamente');
+                    } else {
+                        alert('O número digitado ' + numero + ' é maior do que o número aleatório, tente novamente');
+                    }
+                }
+            } while (!acertou);
+        </script>
+    </body>
+</html>

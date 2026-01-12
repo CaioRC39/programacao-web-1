@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 20</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <script>
+            alert('Digite cinco números para saber sua paridade');
+            var i = 1;
+            do {
+                const numero = parseInt(prompt('Número'));
+                if (numero % 2 == 0) {
+                    alert('O número ' + numero + ' é par');
+                } else {
+                    alert('O número ' + numero + ' é ímpar');
+                }
+                i++;
+            } while (i <= 5);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 18</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <script>
+            const numero = parseInt(prompt('Escolha um número de 1 a 10 para ser exibida a tabuada'));
+            if (numero <= 0 || numero >= 11) {
+                alert('Erro: número inválido');
+            }
+            var saida = '';
+            for (var i = 1; i <= 10; i++) {
+                saida += i * numero + '\n';
+            }
+            alert(saida);
+        </script>
+    </body>
+</html>

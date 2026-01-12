@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercício 04</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p>Insira dois número para saber qual é o maior</p>
+        <input type="text" id="campo1" />
+        <input type="text" id="campo2" />
+        <button onclick="receberValores();">Comparar</button>
+
+        <script>
+            function maiorNumero(p1, p2) {
+                if (p1 > p2) {
+                    return p1;
+                } else if (p1 == p2) {
+                    return 'os número são iguais';
+                } else {
+                    return p2;
+                }
+            }
+
+            function receberValores() {
+                const campo1 = document.getElementById('campo1');
+                const campo2 = document.getElementById('campo2');
+
+                let valor1 = parseFloat(campo1.value);
+                let valor2 = parseFloat(campo2.value);
+                resultado = maiorNumero(valor1, valor2);
+
+                let elemento_p = document.getElementById('resultado');
+
+                if (elemento_p) {
+                    elemento_p.textContent = 'O maior número é: ' + resultado;
+                } else {
+                    elemento_p = document.createElement('p');
+                    elemento_p.id = 'resultado';
+                    const texto_p = document.createTextNode('O maior número é: ' + resultado);
+                    elemento_p.appendChild(texto_p);
+                    document.body.appendChild(elemento_p);
+                }
+            }
+        </script>
+    </body>
+</html>
